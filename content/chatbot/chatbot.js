@@ -41,8 +41,6 @@ function SimpleChatbot(config) {
   this._key = config['key'] ? config['key'] : 'fingerprint';
   this._delay = 500;
   this._chatbotBody = document.querySelector('.chatbot');
-  this._form = document.querySelector('#form-wrap');
-  this._form.classList.add('d-none');
   // индекс текущей реплики bot
   this._botIndex = 0;
 
@@ -268,7 +266,6 @@ SimpleChatbot.prototype._eventHandlerClick = function (e) {
     });
     document.querySelector('.swal2-confirm').addEventListener('click', () => {
      this._chatbotBody.classList.add('d-none');
-     this._form.classList.add('d-block');
     })
   }
   var $prev = $botWrapperLast;
