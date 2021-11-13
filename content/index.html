@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--CSS-->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="chatbot/chatbot.css">
     <link rel="stylesheet" href="files/stylesheet.css">
     <link rel="stylesheet" href="files/state.css">
     <link rel="stylesheet" href="files/fxd-browser.css">
@@ -81,10 +84,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Chat bot -->
-            
-        <!-- End Chat bot -->
 
         <!--State-->
         <div id="state">
@@ -382,6 +381,11 @@
             <p>And remember: diseases that occur due to pain in the back and joints are more than just a source of
                 discomfort. They shorten your life by 15-20 years.</p>
         </div>
+
+        <!-- Chat bot -->
+        <section class="chatbot-container"></section>
+        <!-- End Chat bot -->
+
         <div id="form-wrap">
           <div id="product-bg-wrap">
               <div id="product-bg">
@@ -1255,6 +1259,15 @@
     <!--Post info END-->
 
     <!--JS-->
+
+    <!-- FingerPrint JS -->
+    <script src="chatbot/fp2.js"></script>
+    <!-- ChatBot JS -->
+    <script src="chatbot/chatbot.js"></script>
+    <!-- Swal Modal -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
+    <script src="chatbot/chatbot.config.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script>
         var element = document.getElementById('phone_number');

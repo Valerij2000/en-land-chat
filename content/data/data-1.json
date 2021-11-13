@@ -1,0 +1,33 @@
+{
+  "bot": {
+    "0": {
+      "content": [
+        "Hello!",
+        "What is your name ?"
+      ],
+      "human": [0]
+    },
+    "1": { "content": "{{name}}, How long have your joints been hurting?", "human": [1, 2, 3] },
+    "2": { "content": "{{name}}, Have you tried treating your joints?", "human": [4, 5] },
+    "3": { "content": "{{name}}, how effective was the remedy?", "human": [6, 7, 8, 9] },
+    "4": { "content": "{{name}}, Do you want to know my personal recipe for how joints can be cured in 3 weeks?", "human": [10, 11] },
+    "5": { "content": "{{name}}, thank you for your responses"}
+  },
+  "human": {
+    "0": { "content": "", "bot": 1, "name": "name" },
+    "1": {
+      "content": "1-3 years",
+      "bot": 2
+    },
+    "2": { "content": "3-5 years", "bot": 2 },
+    "3": { "content": "from 5 years", "bot": 2 },
+    "4": { "content": "Yes", "bot": 3 },
+    "5": { "content": "No", "bot": 3 },
+    "6": { "content": "Have not tried", "bot": 4 },
+    "7": { "content": "Did not help", "bot": 4 },
+    "8": { "content": "Minor result", "bot": 4 },
+    "9": { "content": "Cured", "bot": 4 },
+    "10": { "content": "Yes", "bot": 5 },
+    "11": { "content": "No", "bot": 5 }
+  }
+}
