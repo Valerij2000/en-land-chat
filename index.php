@@ -10,7 +10,7 @@ require_once dirname(__FILE__) . '/config.php';
 require_once dirname(__FILE__) . '/lib.php';
 
 // Default content location
-$content_path = 'content/';
+$content_path = '/';
 
 // Load mobile detection library
 use Detection\MobileDetect;
